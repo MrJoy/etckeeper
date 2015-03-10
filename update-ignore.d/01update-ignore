@@ -178,7 +178,7 @@ if [ -e "$file" ]; then
 	else
 		echo "etckeeper warning: can't find tempfile or mktemp" >&2
 	fi
-	file=$($tempfile)
+	file=$($tempfile update-ignore)
 	(
 		skipping=
 		while read -r line; do
