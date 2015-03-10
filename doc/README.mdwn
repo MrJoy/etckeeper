@@ -5,8 +5,7 @@ This is a fork of `etckeeper` meant to work with OS X.  It's being developed/tes
 
 ## Installation (OS X)
 
-1. You'll need to grab, and install [metastore](https://github.com/chadrik/metastore)
-    * Currently `make install` will complain about `install` not knowing the `-D` option.  Edit `Makefile` and change `-D` to `-d`.
+1. You'll need to grab, and install [metastore](https://github.com/MrJoy/metastore)
 1. Edit `etckeeper.conf` to your liking.  On OS X, none of the package managers are likely relevant, so leave them blank.  The key thing is to select your source control system.
     * Note that your VCS must be installed such that it's in `root`'s path and is usable by `root`.
 1. `make install` -- you won't need a `make` unless you're using Bazaar or somehow using DNF.
