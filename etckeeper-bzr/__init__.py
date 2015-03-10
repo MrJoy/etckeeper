@@ -29,6 +29,6 @@ else:
 
 if __name__ == "__main__":
     from distutils.core import setup
-    setup(name="bzr-etckeeper", 
+    setup(name="bzr-etckeeper",
           packages=["bzrlib.plugins.etckeeper"],
           package_dir={"bzrlib.plugins.etckeeper":"etckeeper-bzr"})

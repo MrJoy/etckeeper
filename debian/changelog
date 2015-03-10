@@ -233,7 +233,7 @@ etckeeper (0.57) unstable; urgency=low
 
 etckeeper (0.56) unstable; urgency=low
 
-  * Converted to use dh_python2. Closes: #616800 
+  * Converted to use dh_python2. Closes: #616800
   * Handle files with % in their names.
 
  -- Joey Hess <joeyh@debian.org>  Tue, 12 Jul 2011 14:38:09 -0400
@@ -277,7 +277,7 @@ etckeeper (0.53) unstable; urgency=low
   * Add .pyc and .pyo files to ignore.
   * Add lvm/backup and lvm/cache to ignore. Closes: #462355
   * Avoid warning about special or hard linked files that are ignored
-    by hg. Thanks Sjoerd Mullender for patch. 
+    by hg. Thanks Sjoerd Mullender for patch.
     Closes: https://bugzilla.redhat.com/show_bug.cgi?id=688991
 
  -- Joey Hess <joeyh@debian.org>  Fri, 18 Mar 2011 15:37:54 -0400
@@ -499,7 +499,7 @@ etckeeper (0.32) unstable; urgency=low
   * Run etckeeper init on initial install. Closes: #505772
     (The idea being that if someone doesn't want to use git, they can
     immediatly uninit to easily reverse this.)
-  * Document how to change the VCS used by etckeeper, without preserving 
+  * Document how to change the VCS used by etckeeper, without preserving
     any history. Preserving history left as an exersise for the reader.
     Closes: #515237
   * Implement list-installed for rpm.
@@ -526,7 +526,7 @@ etckeeper (0.30) unstable; urgency=low
     comment block. (You may want to add such a comment block to your existing
     .gitignore, or delete the file and regenerate it.)
   * Run etckeeper update-ignore on upgrade.
-  * Fix handling of -d in recursive calls to etckeeper 
+  * Fix handling of -d in recursive calls to etckeeper
 
  -- Joey Hess <joeyh@debian.org>  Sat, 14 Feb 2009 01:21:22 -0500
 
@@ -654,7 +654,7 @@ etckeeper (0.15) unstable; urgency=low
   [ Jelmer Vernooij ]
   * Support for the new bzr pre-commit hook. This requires bzr version 1.4.
     Closes: #473069
-  * Remove pointless commit.d/40bzr-rm script. 
+  * Remove pointless commit.d/40bzr-rm script.
 
   [ Joey Hess ]
   * debhelper v7; rules file minimisation

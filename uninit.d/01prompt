@@ -7,7 +7,7 @@ if [ "$1" != "-f" ]; then
 	echo ""
 	printf "Are you sure you want to do this? [yN] "
 	read answer
-	case "$answer" in 
+	case "$answer" in
 		[Yy]*)
 			echo "Proceeding.."
 			exit 0

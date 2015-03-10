@@ -1,4 +1,4 @@
-_etckeeper() { 
+_etckeeper() {
 	local cur;
 	COMPREPLY=();
 	cur=${COMP_WORDS[COMP_CWORD]};

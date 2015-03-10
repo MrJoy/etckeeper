@@ -1,5 +1,5 @@
 etckeeper is available in git at `git://git.joeyh.name/etckeeper`, or
-[in gitweb](http://git.joeyh.name/?p=etckeeper.git). 
+[in gitweb](http://git.joeyh.name/?p=etckeeper.git).
 
 It's packaged in Debian, Ubuntu, Fedora, etc.
 

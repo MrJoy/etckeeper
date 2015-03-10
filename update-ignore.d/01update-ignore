@@ -35,7 +35,7 @@ comment() {
 
 ignore() {
 	glob="$1"
-	
+
 	case "$VCS" in
 		git)
 			# escape "#" in ignores, as otherwise it may
@@ -100,7 +100,7 @@ writefile () {
 		ignore "*.pacsave"
 		nl
 	fi
-	
+
 	comment "old versions of files"
 	ignore "*.old"
 	# Not currently ignored as admins tend to rely on these files.
@@ -114,7 +114,7 @@ writefile () {
 	ignore blkid.tab
 	ignore blkid.tab.old
 	nl
-	
+
 	comment "some other files in /etc that typically do not need to be tracked"
 	ignore nologin
 	ignore ld.so.cache
@@ -147,7 +147,7 @@ writefile () {
 	ignore "fake-hwclock.data"
 	ignore "check_mk/logwatch.state"
 	nl
-	
+
 	comment "editor temp files"
 	ignore "*~"
 	ignore ".*.sw?"

@@ -4,7 +4,7 @@ set -e
 if [ "$1" = purge ]; then
 	if [ -e /etc/.etckeeper ]; then
 		. /usr/share/debconf/confmodule
-	
+
 		# uninit on purge is tricky because etckeeper's configuration
 		# and code has been removed at this point. This relies on a
 		# stashed away copy.

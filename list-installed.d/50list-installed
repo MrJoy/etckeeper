@@ -7,7 +7,7 @@ if [ "$1" = fmt ]; then
 		echo ""
 	fi
 else
-	# Output to stdout a *sorted* list of all currently installed 
+	# Output to stdout a *sorted* list of all currently installed
 	# (or removed but still with config-files) packages, in the
 	# format "package version\n" (or something similar).
 	if [ "$LOWLEVEL_PACKAGE_MANAGER" = dpkg ]; then

@@ -46,17 +46,17 @@ shellquote() {
 
 generate_metadata() {
 	# This function generates the script commands to fix any file
-	# ownerships that aren't owner=root, group=root, as well as to 
+	# ownerships that aren't owner=root, group=root, as well as to
 	# store the permissions of files.
 	# The script is produced on stdout.  Errors go to stderr.
-	# 
+	#
 	# The script can use a 'maybe' function, which only runs a command
 	# if the file in its last argument exists.
 
 	# We want files in the directory containing VCS data
 	# but we want find to ignore the VCS files themselves.
-	# 
-	# (Note that when using this, the find expression must end with 
+	#
+	# (Note that when using this, the find expression must end with
 	# -print or -exec, else the excluded directories will actually be
 	# printed!)
 	NOVCS='. -path ./.git -prune -o -path ./.bzr -prune -o -path ./.hg -prune -o -path ./_darcs -prune -o'
@@ -80,7 +80,7 @@ generate_metadata() {
 			printf "ln -sf '%s' '%s'\n" "$(echo "$dest" | shellquote)" "$(echo "$link" | shellquote)"
 		done
 	fi
- 
+
 	# Store things that don't have the default user or group.
 	# Store all file modes, in case the user has an unusual umask.
 	find $NOVCS \( -type f -or -type d \) -print | filter_ignore | sort | perl -ne '
